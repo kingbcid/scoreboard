@@ -1,11 +1,12 @@
-// Firebase web configuration (public). Never store operator passwords here.
+// Firebase KING — akun operator harus terdaftar di Firebase Authentication project KING.
 window.COURTSIDE_FIREBASE_CONFIG = {
-  apiKey: "AIzaSyCl8a401OJ8PF_al1mN12-94thdTBuqaCY",
-  authDomain: "courtside-scoreboard-live.firebaseapp.com",
-  databaseURL: "https://courtside-scoreboard-live-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "courtside-scoreboard-live",
-  storageBucket: "courtside-scoreboard-live.firebasestorage.app",
-  messagingSenderId: "365853688060",
-  appId: "1:365853688060:web:e61d63afb81acffeba9779"
+  apiKey: "AIzaSyAaqyjlYJOoauON9xx-5kq1D3ShOYK2bFA",
+  authDomain: "king-basketball-communit-311a2.firebaseapp.com",
+  databaseURL: "https://king-basketball-communit-311a2-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "king-basketball-communit-311a2",
+  storageBucket: "king-basketball-communit-311a2.firebasestorage.app",
+  messagingSenderId: "933317992912",
+  appId: "1:933317992912:web:b58b234f369c72dd8e59d5",
+  measurementId: "G-1T8YTM7YNC"
 };
 window.COURTSIDE_MATCH_ID = "main";

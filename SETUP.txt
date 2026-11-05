@@ -1,22 +1,9 @@
-COURTSIDE SCOREBOARD LIVE V1.1.1
-
-Firebase project configuration is already installed in firebase-config.js.
-Firebase Realtime Database Rules are in firebase-rules.json; paste and Publish in Firebase Console.
-Firebase Authentication must have Email/Password enabled; the two approved UIDs are in the rules.
-
-1. Create a new PUBLIC GitHub repository named basketball-scoreboard-live.
-2. Upload index.html, app.js, sync.js, firebase-config.js, sw.js, icon.svg and manifest.webmanifest to repository ROOT (not in a folder).
-3. GitHub Settings > Pages > Deploy from a branch > main > /(root) > Save.
-4. Controller: https://michaelsalim63-blip.github.io/basketball-scoreboard-live/?mode=control
-5. Smartboard: https://michaelsalim63-blip.github.io/basketball-scoreboard-live/?mode=display
-6. Sign in on controller using one of the Firebase Authentication accounts.
-7. Test score +2, game clock, timeout, break, buzzer, screen lock, and internet loss before a real match.
-
-IMPORTANT: Only one person should operate a given match at a time even though both accounts have permission.
-The display is publicly readable. The display device must have internet access.
-The buzzer on Android Smartboard may need a user interaction to unlock audio and is not guaranteed.
-Network-based clock synchronization is approximate, not certified timing.
-Keep the controller page visible and the device awake while timing.
-This is a separate ONLINE repository; do not overwrite your existing OFFLINE scoreboard.
-
-V1.1.3: Tampilan mode display sekarang menampilkan TIMEOUT LEFT dan jumlah timeout tersisa untuk masing-masing tim.
+KING Firebase migration — November 2026
+1. Firebase Console > KING project > Authentication: verify both admin and operator accounts exist in THIS project and have the listed UIDs. An account in the old project is not automatically migrated.
+2. Realtime Database > Rules: paste KING-REALTIME-DATABASE-RULES.json and Publish. This replaces the existing rules; it preserves KING roster access.
+3. Authentication > Settings > Authorized domains: add kingbcid.github.io.
+4. Upload ALL contents of the corresponding ZIP to the ROOT of the correct GitHub Pages repository, not into a subfolder.
+5. On Control mode, sign in with a KING Firebase Authentication account. Display mode remains public.
+6. This does not migrate prior scoreboard match state. Start a new match or manually copy state if necessary.
+7. For KING Player Statistics, clock connection settings saved locally may still refer to the old Firebase. The updated app migrates the old default URL automatically on load; check the connection settings if you customized them.
+8. Do not deploy the new scoreboard while the old operator is still running a live game. Test before an event.
